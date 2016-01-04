@@ -1,4 +1,4 @@
-package org.wildfly.swarm.examples.jaxrs;
+package org.wildfly.swarm.examples.jaxrs.swagger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,7 +14,7 @@ import org.joda.time.DateTime;
 @Path("/time")
 @Api(value = "/time", description = "Get the time", tags = "time")
 @Produces(MediaType.APPLICATION_JSON)
-public class MyResource {
+public class TimeResource {
 
     @GET
     @Path("/now")
