@@ -13,14 +13,14 @@ import static org.fest.assertions.Assertions.assertThat;
  * @author Bob McWhirter
  */
 @RunWith(Arquillian.class)
-public class JAXRSApplicationIT extends AbstractIntegrationTest {
+public class JAXRSSwaggerApplicationIT extends AbstractIntegrationTest {
 
     @Drone
     WebDriver browser;
 
     @Test
     public void testIt() {
-        browser.navigate().to("http://localhost:8080/");
+        browser.navigate().to("http://localhost:8080/time/now");
         assertThat(browser.getPageSource()).contains("Howdy at ");
     }
 }
